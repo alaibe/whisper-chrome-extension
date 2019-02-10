@@ -27,7 +27,7 @@
     "webpack-merge": "^4.1.4"
   },
   "dependencies": {
-    "murmur-client": "^0.3.4",
+    "murmur-client": "../murmur",
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
   }
