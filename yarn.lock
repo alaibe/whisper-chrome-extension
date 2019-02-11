@@ -4215,8 +4215,10 @@ multistream-select@~0.14.4:
     semver "^5.5.0"
     varint "^5.0.0"
 
-murmur-client@../murmur:
-  version "0.3.4"
+murmur-client@^0.3.8:
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/murmur-client/-/murmur-client-0.3.8.tgz#fdf68ba1be1a48cb6eabe1259a4f595a79664417"
+  integrity sha512-3aickkU7XLYCGdR75TEsmFJR4AGpubaBOocBVtuk4hIdtz83J40NPGLLtPom/vozru6lcbSNFHtbzPzcF8F+mw==
   dependencies:
     "@nodeutils/defaults-deep" "^1.1.0"
     async "^2.6.1"
