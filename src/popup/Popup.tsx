@@ -11,15 +11,16 @@ export default class Popup extends React.Component<AppProps, AppState> {
   }
 
   componentDidMount() {
-    // Example of how to send a message to eventPage.ts.
+    console.log("hello")
     chrome.runtime.sendMessage({ popupMounted: true });
   }
 
   render() {
+    chrome.runtime.sendMessage({ popupMounted: true });
     return (
       <div className="popupContainer">
-        Hello, Not world!
-            </div>
+        Hello, world!
+      </div>
     )
   }
 }

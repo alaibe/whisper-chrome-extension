@@ -6,18 +6,13 @@ const server = new Murmur({
   bootnodes: []
 });
 
-// Listen to messages sent from other parts of the extension.
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
-  // onMessage must return "true" if response is async.
   let isResponseAsync = false;
+  console.log("hello")
 
   if (request.popupMounted) {
     server.start();
     server.onReady(async () => {
-      // const web3 = new Web3();
-      // web3.setProvider(server.provider);
-    
-      // Use web3.shh functions here
       console.log('Helloooo');
     });
   }
